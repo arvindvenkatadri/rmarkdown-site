@@ -2,7 +2,9 @@
 title: "Second"
 author: "Arvind Venkatadri"
 date: "03/04/2021"
-output: html_document
+output: 
+  html_document:
+    code_download: true
 ---
 
 ```{r setup, include=FALSE}

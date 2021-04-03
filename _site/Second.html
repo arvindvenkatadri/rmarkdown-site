@@ -32,6 +32,8 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<script src="site_libs/navigation-1.1/sourceembed.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
@@ -57,6 +59,11 @@ if (window.hljs) {
 
 
 
+<style type="text/css">
+#rmd-source-code {
+  display: none;
+}
+</style>
 
 
 
@@ -217,6 +224,9 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 
 
 
@@ -265,6 +275,13 @@ $(document).ready(function () {
 
 <div id="header">
 
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-download-source" href="#">Download Rmd</a></li>
+</ul>
+</div>
+
 
 
 <h1 class="title toc-ignore">Second</h1>
@@ -289,6 +306,7 @@ $(document).ready(function () {
 <p><img src="Second_files/figure-html/graph-2-1.png" width="672" /></p>
 </div>
 
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiU2Vjb25kIgphdXRob3I6ICJBcnZpbmQgVmVua2F0YWRyaSIKZGF0ZTogIjAzLzA0LzIwMjEiCm91dHB1dDogCiAgaHRtbF9kb2N1bWVudDoKICAgIGNvZGVfZG93bmxvYWQ6IHRydWUKLS0tCgpgYGB7ciBzZXR1cCwgaW5jbHVkZT1GQUxTRX0Ka25pdHI6Om9wdHNfY2h1bmskc2V0KGVjaG8gPSBUUlVFKQpsaWJyYXJ5KHRpZHl2ZXJzZSkKbGlicmFyeShwYWxtZXJwZW5ndWlucykKbGlicmFyeShSQ29sb3JCcmV3ZXIpCmBgYAoKIyMgR3JhcGggMgoKCgpgYGB7ciBncmFwaC0yfQpwZW5ndWlucyAlPiUgCiAgZ2dwbG90KGFlcyhmbGlwcGVyX2xlbmd0aF9tbSwgYm9keV9tYXNzX2csIGNvbG9yID0gc3BlY2llcykpICsKICBnZW9tX3BvaW50KCkgKwogIHNjYWxlX2NvbG9yX2JyZXdlcihwYWxldHRlID0gIkRhcmsyIikKYGBgCg==</div>
 
 
 
@@ -322,6 +340,11 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeSourceEmbed("Second.Rmd");
+});
+</script>
 
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
