@@ -1,1 +1,1 @@
-title: "Arvind's RMArkdown Site"
+title: "Arvind's RMarkdown Site"
