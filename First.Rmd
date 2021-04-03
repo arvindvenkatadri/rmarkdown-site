@@ -1,0 +1,20 @@
+---
+title: "First MArkdown"
+author: "Arvind Venkatadri"
+date: "03/04/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
+library(HistData)
+```
+
+## Graph 1
+
+```{r}
+HistData::SnowMap()
+```
+
