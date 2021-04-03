@@ -9,6 +9,11 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "First"
+      href: First.html
+    - text: "Second"
+      href: Second.html
+output:
 output:
   html_document:
     toc: true
