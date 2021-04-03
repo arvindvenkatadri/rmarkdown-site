@@ -1,4 +1,4 @@
-name: my-rmarkdown-website
+name: "Arvind's RMarkdown Site"
 output_dir: _site
 include: ["demo.R"]
 exclude: ["docs.txt", "*.csv"]
@@ -13,7 +13,6 @@ navbar:
       href: First.html
     - text: "Second"
       href: Second.html
-output:
 output:
   html_document:
     toc: true
